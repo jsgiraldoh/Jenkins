@@ -12,5 +12,5 @@ services:
       - $PWD/jenkins_home:/var/jenkins_home
 
 networks:
-  jiranet:
+  jenkinsnet:
     driver: bridge
