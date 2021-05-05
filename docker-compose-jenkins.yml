@@ -6,10 +6,12 @@ services:
     container_name: 'jenkins'
     restart: always
     ports:
-      - '8080:8080'
+      - '8090:8080'
       - '50000:50000'
     volumes:
       - $PWD/jenkins_home:/var/jenkins_home
+    networks:
+      - jenkinsnet
 
 networks:
   jenkinsnet:
